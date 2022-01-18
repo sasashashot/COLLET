@@ -1,0 +1,436 @@
+/* 태블릿 버전 */
+@media screen and (max-width: 1280px) {
+  header {
+    width: 100%;
+    height: 8vw;
+    background-color: rgba(62, 141, 139, 0.75);
+    position: fixed;
+  }
+  header .header_wrap {
+    padding: 2vw 5vw;
+  }
+  header .header_wrap .logo {
+    width: 10vw;
+    height: 4.4vw;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu {
+    width: 4.48vw;
+    height: 3.2vw;
+    margin-top: 0.5vw;
+  }
+
+  section.s1 .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  section.s1 .swiper .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  section.s1 .swiper .swiper-slide .main_txt h1 {
+    text-align: center;
+    color: #002525;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  section.s1 .swiper .swiper-slide .main_txt h3 {
+    text-align: center;
+    color: #002525;
+    font-size: 2vw;
+  }
+  section.s1 .swiper .swiper-slide .main_txt h3 span {
+    font-size: 1.5vw;
+  }
+
+  section.s2 {
+    height: 110vh;
+  }
+  section.s2 .center {
+    width: 80vw;
+  }
+  section.s2 .company_txt p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 7vw;
+  }
+
+  section.s3 {
+    height: 50vw;
+  }
+  section.s3 .center {
+    width: 95vw;
+  }
+  section.s3 .s3_bg {
+    width: 100%;
+    height: 53vh;
+  }
+  section.s3 .fade_animation h1 {
+    margin-bottom: 2vw;
+  }
+
+  section.s4 {
+    height: 50.35vw;
+  }
+  section.s4 .center {
+    width: 95vw;
+  }
+  section.s4 .center .row .s4_right .s4_des {
+    bottom: -25vw;
+    right: 28vw;
+  }
+
+  section.s5 {
+    height: auto;
+    padding-top: 10vw;
+  }
+  section.s5 .center {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section.s5 .center .acc {
+    flex-flow: row wrap;
+  }
+  section.s5 .center .acc .acc_item{
+    width: 48%;
+    margin-bottom: 2vw;
+  }
+  section.s5 .center .acc .acc_item p {
+    display: block;
+  }
+
+
+  section.s6 {
+    height: 75vw;
+  }
+  section.s6 > .center {
+    width: 90%;
+  }
+  section.s6 .center .list {
+    margin-top: 15vw;
+  }
+  section.s6 .center .list ul li {
+    width: 20vw;
+    padding-bottom: 2vw;
+  }
+  section.s6 .s6_bg {
+    z-index: 7;
+  }
+
+  section.s7 {
+    height: 85vh;
+    z-index: 95;
+  }
+  section.s7 #map_canvas {
+    height:700px;
+  }
+  section.s7 .s7_addr {
+    height: 43vw;
+  }
+  section.s7 .s7_addr .s7_info h1 {
+    font-size: 3vw;
+  }
+  section.s7 .s7_addr .s7_info address {
+    font-size: 1.2vw;
+  }
+  section.s7 .s7_addr .time h5 {
+    font-size: 1.5vw;
+  }
+
+  footer {
+    width: 100%;
+  }
+  footer .center {
+    width: 100%;
+  }
+  footer .center .footer_logo {
+    padding-left: 6vw;
+  }
+  footer .center .footer_txt {
+    font-size: 1vw;
+  }
+  footer .center .footer_site .sns {
+    margin-right: 0;
+  }
+  footer .center .footer_site {
+    justify-content: space-evenly;
+  }
+  footer .center .footer_site .family a:first-child {
+    background-size: 10px;
+  }
+
+  .sitemap {
+    background-color: #3e8d8b;
+    top: 0;
+    right: -100vw;
+    left: auto;
+    opacity: 1;
+    padding: 4vw 8vw;
+    overflow-y: auto;
+  }
+  .sitemap.active {
+    right: 0;
+  }
+  .sitemap .site_logo {
+    width: 15vw;
+    float: left;
+  }
+  .sitemap .site_close {
+    top: 7vw;
+    right: 8vw;
+    width: 4vw;
+  }
+  .sitemap .site_sns {
+    top: 7vw;
+    right: 15vw;
+    width: 4vw;
+  }
+  .sitemap .site_nav {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10vw;
+  }
+  .sitemap .site_nav > ul {
+    flex-flow: column nowrap;
+  }
+  .sitemap .site_nav > ul > li > a {
+    font-size: 2.2vw;
+    padding: 1vw;
+    border-bottom: 1px solid #00c9c9;
+    font-weight: bold;
+    color: #002525;
+  }
+  .sitemap .site_nav .sub li a {
+    font-size: 1.5vw;
+    color: #f3eada;
+    margin: 0.5vw;
+    display: block;
+    border-bottom: none;
+  }
+  .sitemap .site_nav > ul > li:hover > a:after {
+    width: 0;
+  }
+  .sitemap .site_nav ul li a:hover:after {
+    width: 0;
+  }
+  .sitemap .site_nav > ul > li > a.active {
+    color: #ffa17a;
+  }
+  .sitemap .site_nav ul li {
+    margin: 0;
+  }
+  .sitemap .site_nav .sub {
+    display: none;
+  }
+}
+/* 모바일 버전 */
+@media screen and (max-width: 360px) {
+  header {
+    height: 16vw;
+  }
+  .header_wrap {
+    padding: 3vw 5vw;
+  }
+  header .header_wrap .logo {
+    width: 22vw;
+    height: 10vw;
+    margin-top: 0.5vw;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu {
+    width: 10vw;
+    height: 8vw;
+    margin-top: 0.65vw;
+  }
+  .swiper .swiper-slide .main_txt h1 {
+    font-size: 5vw;
+  }
+  section.s1 .swiper .swiper-slide .main_txt h3 {
+    font-size: 4vw;
+  }
+  section.s1 .swiper .swiper-slide .main_txt h3 span {
+    font-size: 3vw;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets {
+    bottom: 40%;
+  }
+  section.s2 {
+    height: 70vh;
+  }
+  section.s2 .s2_bg {
+    width: 100%;
+    height: 10vw;
+  }
+  section.s2 .row {
+    padding-top: 3vw; 
+  }
+  section.s2 .company_txt p {
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+    margin-top: 8vw;
+  }
+  section.s3 {
+    height: 87vh;
+  }
+  section.s3 .s3_bg {
+    width: 100%;
+    height: 80vh;
+  }
+  section.s3 .swiper .swiper-slide {
+    height: 137vw;
+  }
+  section.s3 .fade_animation h1 {
+    font-size: 4vw;
+  }
+
+
+  section.s4 {
+    height: 137vh;
+  }
+  section.s4 .center > .fade_animation h5 {
+    font-weight: bold;
+  }
+  section.s4 .center > .fade_animation h1 {
+    padding-right: 3vw;
+  }
+  section.s4 .center > .fade_animation {
+    top: -4vw;
+  }
+  section.s4 .center .row .col-sm-6{
+    height: 87vw;
+  }
+  section.s4 .center .row .s4_left .s4_des {
+    left: 0;
+    bottom: -54vw;
+  }
+  section.s4 .center .row .col-sm-6 .s4_des {
+    width: 95vw;
+  }
+  section.s4 .center .row .s4_right .s4_des {
+    right: 0.1vw;
+    bottom: -108vw;
+  }
+  section.s4 .center .row .col-sm-6 .s4_img {
+    width: 65vw;
+    height: 170vw;
+    margin-top: 8vw;
+  }
+  section.s4 > div > div.row > div.col-sm-6.s4_right > div.s4_img > img {
+    margin-top: 51vw;
+  }
+  section.s4 .center .row .s4_des h4 {
+    padding-top: 3vw;
+    font-size: 5vw;
+  }
+  section.s4 .center .row .s4_des h3 {
+    font-size: 4vw;
+  }
+  section.s4 .center .row .s4_des span {
+    font-size: 4vw;
+  }
+  section.s4 .center .row .s4_des p {
+    font-size: 4.3vw;
+  }
+
+  section.s4 .s4_bg2 {
+    right: 5vw;
+    top: -69.28vw;
+  }
+  section.s4 .s4_bg1 {
+    bottom: -154.5vw;
+    left: 0vw;
+  }
+
+  section.s5 {
+    height: 55vw;
+  }
+  section.s5 .center .acc .acc_item {
+    padding-top: 8vw;
+    padding-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  section.s5 .center .acc .acc_item p {
+    display: none;
+  }
+
+
+  section.s6 {
+    height: 204vw;
+  }
+  section.s6 .center .list ul li {
+    width: 43vw;
+  }
+  section.s6 .s6_bg{
+    height: 179vh;
+    top: -61vw;
+  }
+
+  section.s7 #map_canvas {
+    height:378px;
+  }
+  section.s7 .s7_addr {
+    height: 109vw;
+    width: 85%;
+    top: 58vw;
+    right: 7.5vw;
+  }
+  section.s7 .s7_addr .s7_info h1 {
+    font-size: 6.5vw;
+  }
+  section.s7 .s7_addr .s7_info address {
+    font-size: 3.2vw;
+    padding-bottom: 3vw;
+  }
+  section.s7 .s7_addr .s7_info address > span {
+    font-size: 2.5vw;
+  }
+  section.s7 .s7_addr .deliverry {
+    font-size: 4vw;
+  }
+  section.s7 .s7_addr .time h5 {
+    font-size: 3.7vw;
+  }
+  section.s7 .s7_addr .s7_img .s7_icon {
+    width: 13vw;
+    height: 13vw;
+  }
+  section.s7 .s7_addr .s7_img .s7_icon > img {
+    width: 7.5vw; 
+    margin-left: 2.3vw;
+    margin-top: 1.2vw;
+  }
+
+  footer .center {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .center .footer_logo {
+    width: 30vw;
+    padding-bottom: 4.5vw;
+  }
+  footer .center .footer_txt {
+    width: 90vw;
+    font-size: 1vw;
+    line-height: 3.8vw;
+  }
+  footer .center .footer_site {
+    width: 51vw;
+    align-items: center
+  }
+  footer .center .footer_site .sns {
+    width: 7vw;
+  }
+  footer .center .footer_site .family {
+    height: 5.3vw;
+    width: 20vw;
+  }
+  footer .center .footer_site .family a:first-child {
+    background-size: 7px;
+  }
+}

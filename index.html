@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, minimum-scale=1.0">
+    <title>COLLECT</title>
+    <!-- 파비콘 -->
+    <link href="img/favi.png" type="image/x-icon" rel="shortcut icon">
+
+    <!-- 부트스트랩 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- 메인 CSS -->
+    <link href="css/main.css" type="text/css" rel="main stylesheet">
+    <!-- 미디어쿼리 css -->
+    <link href="css/media_main.css" type="text/css" rel="main stylesheet">
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+    <!-- 부트스트랩 번들 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- 스와이퍼 번들 -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 메인 자바스크립트 -->
+    <script src="js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+     <!-- 구글 지도 -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script> 
+
+    <script> 
+    function initialize() { 
+    var myLatlng = new google.maps.LatLng(37.511093893747756, 127.05857392072478); // 좌표값
+    var mapOptions = { 
+            zoom: 18, // 지도 확대레벨 조정
+            center: myLatlng, 
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+    } 
+    var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+    var marker = new google.maps.Marker({ 
+    position: myLatlng, 
+    map: map, 
+    title: "COLLECT" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+    }); 
+    } 
+    window.onload = initialize;
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                            <ul class="sub">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">LIP</a></li>
+                                <li><a href="#">SET</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">CHAPTER</a>
+                            <ul class="sub">
+                                <li><a href="#">COLLECTION</a></li>
+                                <li><a href="#">FILM</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">STOCKIST</a>
+                        </li>
+                        <li>
+                            <a href="#">ACCOUNT</a>
+                        </li>
+                        <li>
+                            <a href="#">SIGN IN</a>
+                            <ul class="sub">
+                                <li><a href="#">CS CENTER</a></li>
+                                <li><a href="#">NOTICE</a></li>
+                                <li><a href="#">CART</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <a href="#"></a>
+                </div>
+                <!-- 서브메뉴 배경 -->
+                <div class="sub_bg"></div>
+            </div>
+        </header>
+
+
+        <section class="s1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main1">
+                      <div class="main_txt">
+                        <h1> COLLECT  YOUR OWN  SHADE </h1>
+                        <h3> 나 <span>my</span>, 가치 <span>value</span>, 표현 <span>express</span> </h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide main2">
+                    <div class="main_txt">
+                        <h1> COLLECT  YOUR OWN  SHADE </h1>
+                        <h3> 나 <span>my</span>, 가치 <span>value</span>, 표현 <span>express</span> </h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide main3">
+                    <div class="main_txt">
+                        <h1> COLLECT  YOUR OWN  SHADE </h1>
+                        <h3> 나 <span>my</span>, 가치 <span>value</span>, 표현 <span>express</span> </h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide main4">
+                    <div class="main_txt">
+                        <h1> COLLECT  YOUR OWN  SHADE </h1>
+                        <h3> 나 <span>my</span>, 가치 <span>value</span>, 표현 <span>express</span> </h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"> </div>
+                <div class="swiper-button-prev"> </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-paly-stop"></div>
+              </div>
+              
+        </section>
+
+
+        <section class="s2">
+            <div class="center">
+                <div class="row">
+                    <div class="col-xl-6 company_txt">
+                        <div class="s2_t">
+                            <h5>COLETTE</h5>
+                            <h1>ABOUT</h1>
+                        </div>
+                        <p>
+                            콜레트COLETTE는 뷰티 제품을 선보이는 브랜드로, 프랑스 작가 시도니 가브리엘 콜레트Sidonie-Gabrielle Colette, 1873-1954로부터 영감을 받은 뷰티 브랜드입니다.
+                            자유와 욕망의 주체로서 당대의 여성들에게 큰 공감을 불러 일으킨 작가 콜레트처럼, 주체적이고 취향이 확고한 오늘의 의식 있는 여성들이 언제 어디서나 자신을 당당히 표현할 수 있도록 지지하고자 합니다.<br>
+                            콜레트는 나my, 가치value, 표현express을 브랜드의 주요 키워드로 선정해 제품과 디자인에 반영합니다. 또한 콜레트는 모든 여성이 본인의 취향을 수집한다는 뜻의 ‘모으다collect’와 ‘수집가collector’의 의미를 아우르며,
+                            다양한 여성들이 각자의 생각을 온전히 표출하고 또 소장할 수 있기를 바랍니다. 콜레트의 제품들은 매 시즌 다양한 구성으로 선보이게 되며, 고객 각자의 취향에 따라 능동적으로 제품을 수집할 수 있도록 제안합니다.
+                        </p>
+                    </div>
+                    <div class="col-xl-6 company_img">
+                        <img src="img/2-1.png">
+                    </div>
+                  </div>
+            </div>
+            <div class="s2_bg"></div>
+        </section>
+
+
+        <section class="s3">
+            <div class="s3_bg"></div>
+            <div class="center">
+                <div class="fade_animation">
+                    <h5>콜레트의 새로운 컬렉션.</h5>
+                    <h1>LES 17 HEURES DE COLETTE</h1>
+                </div>
+                <div class="product up_animation">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide p1"></div>
+                          <div class="swiper-slide p2"></div>
+                          <div class="swiper-slide p3"></div>
+                          <div class="swiper-slide p4"></div>
+                          <div class="swiper-slide p5"></div>
+                          <div class="swiper-slide p6"></div>
+                          <div class="swiper-slide p7"></div>
+                          <div class="swiper-slide p8"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="s4">
+            <div class="center">
+                <div class="fade_animation">
+                    <h5>콜레트의 세트 에디션.</h5>
+                    <h1>COLETTE SET</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/4-1.png" alt="세트1">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <h4>ENCRE À LÈVRE SET EDITION
+                            </h4>
+                            <h3>엉크르 아 레브르 세트 에디션</h3>
+                            <span>KRW 35,000</span>
+                            <p>반짝이는 물빛이 입술에 닿아 본연의 아름다움을<br> 다채롭게 이끌어내는 립틴트 세트입니다.</p>
+                        </div>
+                        <div class="s4_bg1"></div>
+                    </div>
+                    <div class="col-sm-6 s4_right">
+                        <div class="s4_img s4_ani3">
+                            <img src="img/4-2.png" alt="세트2">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <h4>BAUME À LÈVRE SET EDITION
+                            </h4>
+                            <h3>봄 아 레브르 세트 에디션</h3>
+                            <span>KRW 69,000</span>
+                            <p>본연의 부드러움을 이끌어내는 립밤과 후즈 마뜨<br> 뉴컬러로 자신만의 메이크업을 완성해보세요.</p>
+                        </div>
+                        <div class="s4_bg2"></div>
+                    </div>
+                  </div>
+            </div>
+            
+            
+        </section>
+
+
+        <section class="s5">
+            <div class="center">
+                <div class="acc up_animation">
+                    <div class="acc_item acc1 active">
+                        <h3>LES 17 HEURES DE COLETTE</h3>
+                        <p>황금빛 노을로 물드는 오후의 해변</p>
+                    </div>
+                    <div class="acc_item acc2">
+                        <h3>CHAPITRE I.</h3>
+                        <p>ON COMMENCE EN HIVER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="s6">
+            <div class="center">
+                <div class="list">
+                    <ul>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/6-f.png" alt="1">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/6-1-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/6-2-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/6-3-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/6-4-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/6-5-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/6-6-1.png" alt="1">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/6-7-1.png" alt="1">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="s6_bg"></div>
+        </section>
+
+
+        <section class="s7">
+            <div id="map_canvas" style="width:100%;"></div>
+            <div class="s7_addr up_animation">
+                <div class="s7_img">
+                    <div class="s7_icon">
+                        <img src="img/7-1.png" alt="콕">
+                    </div>
+                </div>
+                <div class="s7_info">
+                    <h4>CHICOR</h4>
+                    <h1>시코르 코엑스점</h1>
+                    <address>
+                        서울시 강남구 영동대로 513 지하1층<br>
+                        <br>
+                        <span> CHICOR COEX<br>
+                        B1F, 513, Yeongdong-daero, Gangnam-gu, Seoul</span>
+                    </address>
+                    <div class="deliverry">
+                        <p>오프라인에서 쉽게 접할 수 없었던 뷰티매니아들을 위한 해외유명브랜드에서부터 온라인상에서 뜨거운 인기를 얻고 있는 새로운 감성의 국내브랜드까지!</p>
+                    </div>
+                    <div class="time">
+                        <h5>
+                            <span>BUSINESS HOUR.</span> 10:30 - 22:00<br>
+                            <span>TEL.</span> 02-6002-3550
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="center">
+                <div class="footer_logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="footer_txt">
+                    <p class="en">
+                        BLANK CORP.<br>
+
+                        대표이사. 남대광<br>
+                        개인정보책임자. 김대훈 프로(privacy@blankcorp.kr)<br>
+                        사업자등록번호. 359-87-00301<br>
+                        통신판매업 신고번호. 제2016-서울강남-01468호<br>
+                        주소. 강남구 테헤란로 311, 3층<br>
+                        colette@blankcorp.kr
+                    </p>
+                    <p class="cr">
+                        CS CENTER<br>
+
+                        평일 09:00–18:00 (점심시간 12:00–13:00)<br>
+                        +82 02-6951-5570<br>
+                        cs email : colette@metanet.co.kr
+                    </p>
+                </div>
+                <div class="footer_site">
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="img/f-insta.png" alt="insta"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <a href="#"> CS
+                        </a>
+                        <a href="#">CS센터</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 사이트맵 -->
+    <div class="sitemap">
+        <div class="site_logo">
+            <img src="img/logo.png" alt="사이트맵 로고">
+        </div>
+        <div class="site_close">
+            <a href="#"><img src="img/X-1.png" alt="닫기"></a>
+        </div>
+        <nav class="site_nav">
+            <ul>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="sub">
+                        <li><a href="#">ALL</a></li>
+                        <li><a href="#">LIP</a></li>
+                        <li><a href="#">SET</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CHAPTER</a>
+                    <ul class="sub">
+                        <li><a href="#">COLLECTION</a></li>
+                        <li><a href="#">FILM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">STOCKIST</a>
+                </li>
+                <li>
+                    <a href="#">ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="#">SIGN IN</a>
+                    <ul class="sub">
+                        <li><a href="#">CS CENTER</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">CART</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="site_sns">
+            <ul>
+                <li><a href="#"><img src="img/f-insta.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
